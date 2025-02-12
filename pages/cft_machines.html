@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTF Machines</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -34,25 +34,25 @@
             <div id="dropdown-content-4" class="dropdown-content">
                 <table class="main-table-mobile">
                     <tr><td>Name</td><td>SO</td><td>Difficulty</td><td>Vuln. Web</td><td>Vuln. SO</td><td>WriteUp</td></tr>
-                    <tr><td>Cap</td><td>Linux</td><td>🟢Easy</td><td>Idors</td><td>Linux capabilities SUID</td><td><a class="anchor-btn" href="/writeUps/Cap_machine.txt" target="_blank">View</a></td></tr>
-                    <tr><td>TwoMillion</td><td>Linux Ubuntu 22.04 LTS Jammy</td><td>🟢Easy</td><td>API Enumeration, Command Injection</td><td>CVE-2023-0386, Linux Kernel OverlayFS setuid</td><td><a class="anchor-btn" href="/writeUps/TwoMillion_machine.txt" target="_blank">View</a></td></tr>
-                    <tr><td>BoardLight</td><td>Linux Ubuntu 0.11 Focal</td><td>🟢Easy</td><td>Dolibarr - CVE-2023-30253</td><td>Enlightenment 0.23.1 CVE-2022-37706</td><td><a class="anchor-btn" href="/writeUps/BoadLight_machine.txt" target="_blank">View</a></td></tr>
-                    <tr><td>OpenAdmin</td><td>Linux</td><td>🟢Easy</td><td>OpenNetAdmin 18.1.1 - RCE</td><td>Crack id_rsa hash, Bit suid with nano</td><td><a class="anchor-btn" href="/writeUps/OpenAdmin_machine.txt" target="_blank">View</a></td></tr>
-                    <tr><td>Mirai</td><td>Linux Raspberry Pi-hole</td><td>🟢Easy</td><td>Deafult Raspberry Pi-hole Credentials</td><td>Forency device USB</td><td><a class="anchor-btn" href="/writeUps/Mirai_machine.txt" target="_blank">View</a></td></tr>
-                    <tr><td>Networked</td><td>Linux 7 CentOS</td><td>🟢Easy</td><td>File upload bypass</td><td>Crontab, Command injection, /network-scripts/ in contOS</td><td><a class="anchor-btn" href="/writeUps/Networked_machine.txt" target="_blank">View</a></td></tr>
-                    <tr><td>Editorial</td><td>Linux ubuntu0.7 Jammy</td><td>🟢Easy</td><td>Server-Side Request Forgery (SSRF)</td><td>Git enumeration, CVE-2022-24439 GitPython 3.1.29</td><td><a class="anchor-btn" href="/writeUps/Editorial_machine.txt" target="_blank">View</a></td></tr>
-                    <tr><td>PermX</td><td>Linux Ubuntu 0.10 Jammy</td><td>🟢Easy</td><td>Chamilo - CVE-2023-4220</td><td>ACL Abuse in Linux</td><td><a class="anchor-btn" href="/writeUps/PermX_machine.txt" target="_blank">View</a></td></tr>
-                    <tr><td>Analytics</td><td>Linux Ubuntu 22.04.3 LTS Jammy</td><td>🟢Easy</td><td>Metabase 0.46.6 - CVE-2023-38646 (RCE)</td><td>Linux Kernel OverlayFS CVE-2023-2640 and CVE-2023-32629</td><td><a class="anchor-btn" href="/writeUps/Analytics_Machine.pdf" target="_blank">View</a></td></tr>
-                    <tr><td>Perfection</td><td>Ubuntu 22.04.4 LTS Jammy</td><td>🟢Easy</td><td>Server Side Temple Injection - WEBrick - Ruby</td><td>Hashcat Brute Force</td><td><a class="anchor-btn" href="/writeUps/Perfection_Machine.pdf" target="_blank">View</a></td></tr>
-                    <tr><td>Headless</td><td>Debian GNU/Linux 12 (bookworm)</td><td>🟢Easy</td><td>XSS (http headers) , Command Injection</td><td>/bin/bash(SUID)</td><td><a class="anchor-btn" href="/writeUps/Headless_Machine.pdf" target="_blank">View</a></td></tr>
-                    <tr><td>Wifinetic</td><td>Ubuntu 20.04.6 Focal krnwifinetic</td><td>🟢Easy</td><td>FTP anonymus y Acceso por SHH</td><td>WPA Pin brute force attack with Reaver</td><td><a class="anchor-btn" href="/writeUps/Wifinetic_Machine.pdf" target="_blank">View</a></td></tr>
-                    <tr><td>Sau</td><td>Linux Ubuntu 20.04.6 LTS Focal</td><td>🟢Easy</td><td>SSRF on Request-Baskets (CVE-2023-27163)</td><td>Sysytemctl misconfig. Broken less View</td><td><a class="anchor-btn" href="/writeUps/Sau_Machine.pdf" target="_blank">View</a></td></tr>
-                    <tr><td>Validation</td><td>Linux Ubuntu1 20.04 Focal</td><td>🟢Easy</td><td>SQL Injection + PHP Command Injection RCE</td><td>Root password in archive config.php (Docker)</td><td><a class="anchor-btn" href="/writeUps/Validation_Machine.pdf" target="_blank">View</a></td></tr>
-                    <tr><td>GoodGames</td><td>Linux	Debian 11 (bullseye)</td><td>🟢Easy</td><td>SQL Injection + Server Side Temp. Inj. + RCE</td><td>Docker Breakouts (Docker)</td><td><a class="anchor-btn" href="/writeUps/GoodGames_Machine.pdf" target="_blank">View</a></td></tr>
-                    <tr><td>Tabby</td><td>Linux Ubuntu 20.04 LTS Focal</td><td>🟢Easy</td><td>LFI + Tomcat .war deploy RCE</td><td>LXD Abuse (lxc, /mnt)</td><td><a class="anchor-btn" href="/writeUps/Tabby_Machine.pdf" target="_blank">View</a></td></tr>
-                    <tr><td>Cache</td><td>Linux Ubuntu 18.04.2 LTS Bionic</td><td>🟠Medium</td><td>Authentication Bypass, SQLI, RCE</td><td>Memcache (port 11211), Docker Abuse (/mnt)</td><td><a class="anchor-btn" href="/writeUps/Cache_Machine.pdf" target="_blank">View</a></td></tr>
-                    <tr><td>Seal</td><td>Linux	Ubuntu 20.04.2 LTS Focal</td><td>🟠Medium</td><td>Broken Parser Logic, Tomcat .war deploy RCE</td><td>Softlink, Ansible-Playbook, /bin/bash(SUID)</td><td><a class="anchor-btn" href="/writeUps/Seal_Machine.pdf" target="_blank">View</a></td></tr>
-                    <tr><td>Backend</td><td>Linux Ubuntu 20.04.2 LTS Focal</td><td>🟠Medium</td><td>API Explotation (FastAPI-Python), JWToken</td><td>Password in auth.log</td><td><a class="anchor-btn" href="/writeUps/Backend_Machine.pdf" target="_blank">View</a></td></tr>
+                    <tr><td>Cap</td><td>Linux</td><td>🟢Easy</td><td>Idors</td><td>Linux capabilities SUID</td><td><a class="anchor-btn" href="../writeUps/Cap_machine.txt" target="_blank">View</a></td></tr>
+                    <tr><td>TwoMillion</td><td>Linux Ubuntu 22.04 LTS Jammy</td><td>🟢Easy</td><td>API Enumeration, Command Injection</td><td>CVE-2023-0386, Linux Kernel OverlayFS setuid</td><td><a class="anchor-btn" href="../writeUps/TwoMillion_machine.txt" target="_blank">View</a></td></tr>
+                    <tr><td>BoardLight</td><td>Linux Ubuntu 0.11 Focal</td><td>🟢Easy</td><td>Dolibarr - CVE-2023-30253</td><td>Enlightenment 0.23.1 CVE-2022-37706</td><td><a class="anchor-btn" href="../writeUps/BoadLight_machine.txt" target="_blank">View</a></td></tr>
+                    <tr><td>OpenAdmin</td><td>Linux</td><td>🟢Easy</td><td>OpenNetAdmin 18.1.1 - RCE</td><td>Crack id_rsa hash, Bit suid with nano</td><td><a class="anchor-btn" href="../writeUps/OpenAdmin_machine.txt" target="_blank">View</a></td></tr>
+                    <tr><td>Mirai</td><td>Linux Raspberry Pi-hole</td><td>🟢Easy</td><td>Deafult Raspberry Pi-hole Credentials</td><td>Forency device USB</td><td><a class="anchor-btn" href="../writeUps/Mirai_machine.txt" target="_blank">View</a></td></tr>
+                    <tr><td>Networked</td><td>Linux 7 CentOS</td><td>🟢Easy</td><td>File upload bypass</td><td>Crontab, Command injection, /network-scripts/ in contOS</td><td><a class="anchor-btn" href="../writeUps/Networked_machine.txt" target="_blank">View</a></td></tr>
+                    <tr><td>Editorial</td><td>Linux ubuntu0.7 Jammy</td><td>🟢Easy</td><td>Server-Side Request Forgery (SSRF)</td><td>Git enumeration, CVE-2022-24439 GitPython 3.1.29</td><td><a class="anchor-btn" href="../writeUps/Editorial_machine.txt" target="_blank">View</a></td></tr>
+                    <tr><td>PermX</td><td>Linux Ubuntu 0.10 Jammy</td><td>🟢Easy</td><td>Chamilo - CVE-2023-4220</td><td>ACL Abuse in Linux</td><td><a class="anchor-btn" href="../writeUps/PermX_machine.txt" target="_blank">View</a></td></tr>
+                    <tr><td>Analytics</td><td>Linux Ubuntu 22.04.3 LTS Jammy</td><td>🟢Easy</td><td>Metabase 0.46.6 - CVE-2023-38646 (RCE)</td><td>Linux Kernel OverlayFS CVE-2023-2640 and CVE-2023-32629</td><td><a class="anchor-btn" href="../writeUps/Analytics_Machine.pdf" target="_blank">View</a></td></tr>
+                    <tr><td>Perfection</td><td>Ubuntu 22.04.4 LTS Jammy</td><td>🟢Easy</td><td>Server Side Temple Injection - WEBrick - Ruby</td><td>Hashcat Brute Force</td><td><a class="anchor-btn" href="../writeUps/Perfection_Machine.pdf" target="_blank">View</a></td></tr>
+                    <tr><td>Headless</td><td>Debian GNU/Linux 12 (bookworm)</td><td>🟢Easy</td><td>XSS (http headers) , Command Injection</td><td>/bin/bash(SUID)</td><td><a class="anchor-btn" href="../writeUps/Headless_Machine.pdf" target="_blank">View</a></td></tr>
+                    <tr><td>Wifinetic</td><td>Ubuntu 20.04.6 Focal krnwifinetic</td><td>🟢Easy</td><td>FTP anonymus y Acceso por SHH</td><td>WPA Pin brute force attack with Reaver</td><td><a class="anchor-btn" href="../writeUps/Wifinetic_Machine.pdf" target="_blank">View</a></td></tr>
+                    <tr><td>Sau</td><td>Linux Ubuntu 20.04.6 LTS Focal</td><td>🟢Easy</td><td>SSRF on Request-Baskets (CVE-2023-27163)</td><td>Sysytemctl misconfig. Broken less View</td><td><a class="anchor-btn" href="../writeUps/Sau_Machine.pdf" target="_blank">View</a></td></tr>
+                    <tr><td>Validation</td><td>Linux Ubuntu1 20.04 Focal</td><td>🟢Easy</td><td>SQL Injection + PHP Command Injection RCE</td><td>Root password in archive config.php (Docker)</td><td><a class="anchor-btn" href="../writeUps/Validation_Machine.pdf" target="_blank">View</a></td></tr>
+                    <tr><td>GoodGames</td><td>Linux	Debian 11 (bullseye)</td><td>🟢Easy</td><td>SQL Injection + Server Side Temp. Inj. + RCE</td><td>Docker Breakouts (Docker)</td><td><a class="anchor-btn" href="../writeUps/GoodGames_Machine.pdf" target="_blank">View</a></td></tr>
+                    <tr><td>Tabby</td><td>Linux Ubuntu 20.04 LTS Focal</td><td>🟢Easy</td><td>LFI + Tomcat .war deploy RCE</td><td>LXD Abuse (lxc, /mnt)</td><td><a class="anchor-btn" href="../writeUps/Tabby_Machine.pdf" target="_blank">View</a></td></tr>
+                    <tr><td>Cache</td><td>Linux Ubuntu 18.04.2 LTS Bionic</td><td>🟠Medium</td><td>Authentication Bypass, SQLI, RCE</td><td>Memcache (port 11211), Docker Abuse (/mnt)</td><td><a class="anchor-btn" href="../writeUps/Cache_Machine.pdf" target="_blank">View</a></td></tr>
+                    <tr><td>Seal</td><td>Linux	Ubuntu 20.04.2 LTS Focal</td><td>🟠Medium</td><td>Broken Parser Logic, Tomcat .war deploy RCE</td><td>Softlink, Ansible-Playbook, /bin/bash(SUID)</td><td><a class="anchor-btn" href="../writeUps/Seal_Machine.pdf" target="_blank">View</a></td></tr>
+                    <tr><td>Backend</td><td>Linux Ubuntu 20.04.2 LTS Focal</td><td>🟠Medium</td><td>API Explotation (FastAPI-Python), JWToken</td><td>Password in auth.log</td><td><a class="anchor-btn" href="../writeUps/Backend_Machine.pdf" target="_blank">View</a></td></tr>
                 </table>
             </div>
         </div>
@@ -61,6 +61,6 @@
         
     </div>
 
-    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="../scripts.js"></script>
 </body>
 </html>

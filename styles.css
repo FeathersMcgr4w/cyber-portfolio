@@ -1,0 +1,249 @@
+body {
+    background-color: #181a1b;
+    color: #ffffff;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #43ff0f;
+}
+
+.flex-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.display-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*NAME TITTLE*/
+.author-name {
+    font-size: 45px;
+}
+
+/*PROFILE PHOTO*/
+.profile-photo {
+    border-radius: 50%;
+    width: 125px;
+}
+
+.ctn-blocks {
+    margin: 50px 0px;
+}
+
+/*GREEN-LINE-DECORATION*/
+.line-decoration {
+    border: 1px solid #43ff0f;
+    margin-bottom: 25px;
+}
+
+/*TABLES*/
+.main-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.main-table td {
+    border-bottom: 1px solid #444444;
+    font-size: 17px;
+    padding: 15px;
+}
+
+.main-table tr:nth-child(even) {
+    background-color: #222426;
+}
+
+.main-table tr:nth-child(odd) {
+    background-color: #2a2d2f;
+}
+
+/*CTFs Table*/
+.main-table-mobile {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+.main-table-mobile td {
+    border-bottom: 1px solid #444444;
+    font-size: 17px;
+    padding: 15px;
+}
+
+.main-table-mobile tr:nth-child(even) {
+    background-color: #222426;
+}
+
+.main-table-mobile:nth-child(odd) {
+    background-color: #2a2d2f;
+}
+
+.tr-proyects {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(7, 130px);
+}
+
+.display-flex-ctn {
+    display: flex;
+    align-items: center;
+}
+
+.highlights {
+    color: #ffca18;
+}
+
+/*Drop Down*/
+.display-flex-ctn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-btn {
+    background-color: #181a1b;
+    border: 2px solid #3bde0e;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.dropdown-btn:hover {
+    background-color: #3bde0e;
+    color: #181a1b;
+  }
+
+.dropdown-content {
+    display: none;
+    margin-top: 10px;
+}
+
+/*ANCHOR BUTTON*/
+.anchor-btn {
+    color: #2a2d2f;
+    text-decoration: none;
+    background-color: #f0f8ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.anchor-btn:hover {
+    background-color: #d7dee3;
+}
+
+/*Typing Effect*/
+.console-ui {
+    margin: 10px 0px;
+    width: 900px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #0b0b0b;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#typing-container {
+    color: #43ff0f;
+    position: relative;
+    display: inline-block;
+    border-right: 2px solid #3bde0e;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: caret-blink 0.7s step-end infinite;
+}
+
+@keyframes caret-blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .container {
+        margin: 10px;
+        max-width: 480px;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #43ff0f;
+    }
+
+    /*NAME TITTLE*/
+    .author-name {
+        font-size: 32px;
+    }
+    .role-title {
+        font-size: 19px;
+    }
+    /*PROFILE PHOTO*/
+    .profile-photo {
+        border-radius: 50%;
+        width: 100px;
+    }
+
+    .main-table td{
+        font-size: 15px;
+    }
+
+    .tr-proyects {
+        max-width: 480px;
+        display: grid;
+        grid-template-columns: repeat(4, 105px);
+    }
+
+    .ctf-flag {
+        width: 150px;
+        margin-right: 10px;
+    }
+
+    .tr-certif-resp {
+        max-width: 480px;
+        display: grid;
+        grid-template-columns: repeat(3, 125px);
+    }
+
+    /*CTFs table*/
+    .main-table-mobile {
+        width: 100%;
+        border-collapse: collapse;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .main-table-mobile tr {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    
+    .main-table-mobile td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .main-table-mobile td:last-child {
+        border-bottom: none;
+    }
+
+    .console-ui {
+        padding: 15px 10px;
+    }
+}

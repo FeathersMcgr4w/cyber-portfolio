@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Padron</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!--HEADER-->
+        <div class="flex-header">
+            <div>
+                <h1 class="author-name">David Padron</h1>
+                <h2 class="role-title">Threat Intelligence Analyst</h2>
+            </div>
+            <img class="profile-photo" src="https://media.licdn.com/dms/image/v2/D4E03AQG4Spt7WtQP9w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1726776140571?e=1744243200&v=beta&t=whZzd6wi8gKweX8Oj3R-cVE1BhzRMVfDJNnOGh6HJBw" alt="david-padron-profile"/>
+        </div>
+        <hr>
+        <div class="flex-header">
+            <div class="console-ui">┏━(<span style="color: red;">root@kali</span>)$_<div id="typing-container"></div></div>
+        </div>
+        <div class="flex-header">
+            <div class="console-ui"><h4 style="color: #43ff0f;">-rwxrwxrwx 1 root root 3924 Fab 01 2025 portfolio.txt</h4></div>
+        </div>
+
+        <!--WHOAMI-->
+        <div class="ctn-blocks">
+            <div class="flex-header">
+                <div class="display-flex-ctn">
+                    <img src="https://cdn-icons-png.freepik.com/512/5701/5701992.png" alt="server-icon" width="50px"/>
+                    <h2>WHOAMI</h2>
+                </div>
+                <button class="dropdown-btn" onclick="toggleDropdown('dropdown-content-1')">▼</button>
+            </div>
+            <hr class="line-decoration"/>
+            
+            <!-- TABLA (Oculta por defecto) -->
+            <div id="dropdown-content-1" class="dropdown-content">
+                <table class="main-table">
+                    <tr>
+                        <td>Hola, soy David Padron, especialista en <span class="highlights">Threat Intelligence y OSINT</span>, con enfoque en equipos de <span class="highlights">Red Team</span> dentro del <span class="highlights">hacking ético</span>. Me dedico a la fase de reconocimiento en pruebas de penetración (pentesting) en entornos de producción de servicios web empresariales.</td>
+                    </tr>
+                    <tr>
+                        <td>Mi trabajo consiste en investigar empresas utilizando técnicas de OSINT para identificar posibles vulnerabilidades que puedan ser analizadas y explotadas de manera ética. Además, desarrollo herramientas y scripts de automatización en Bash y Python para llevar a cabo reconocimiento activo y pasivo, obteniendo información clave sobre los objetivos de evaluación.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+
+        <!--PROYECTS-->
+        <div class="ctn-blocks">
+            <div class="flex-header">
+                <div class="display-flex-ctn">
+                    <img src="https://cdn0.iconfinder.com/data/icons/telecommunication-1/50/18-512.png" alt="proyects-icon" width="50px"/>
+                    <h2>PROYECTS</h2>
+                </div>
+                <button class="dropdown-btn" onclick="toggleDropdown('dropdown-content-2')">▼</button>
+            </div>
+            <hr class="line-decoration"/>
+            
+            <!-- TABLA (Oculta por defecto) -->
+            <div id="dropdown-content-2" class="dropdown-content">
+                <table class="main-table">
+                    <tr>
+                        <td>OSINT Linkedin Employees</td>
+                        <td>Python script to search linkedin employees from a domain</td>
+                        <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABHFJREFUaEPNWotx2zAMBbxI7UnqTNJkkqSTJJ0k7iRxFglqkKAEigQBype76i5XW6JAPPweQBdhuRAAaP2qPtlPusvNm74cf8VWOK6v/A8A5gzCqxWA+Zf9NxyLzhpc1qd/1OdY2OjNZjdOO8y+FFvPq+SqNUQgIyM8u8c3zhmnzapl13L6UjG9vftaXRnZLLJNDPwWZkSyu4aIHgHgJwCc1eKjfL4CAP/xdQGAP4hYvruy6wBsjRUSYC0iIlb4FQBEWQ6MkGMZyNMskG3Eh3ZylH9Xz9mqxeoRw/D6hz4IKzdqsfcCeL6Je+HwQMQTiyaidwI4V4Itp+T7L4j420PbZIck4CSAWgwrKzH/hohPGcDX800rBjW4KkQXRHzwAFjPM4D55E+vKQD8lZXg8GGvuPmwQqAL4uFOABPwNdYNgEVKOI2lKvkesFl0HEKOZywA2T3s2RCUO0KoEJluLhpv2CiIqFNxGqU/HAcHAOz1gOwstf6XfJ0pk/yKJrYiUXNF4gMA0EAT2THplRJrmdGtQkRUSuVEpkwt7QEoMbjwxC4A36J8E2F0AUgluAk1WbryRCfUKw9sKswRCD5iXUHH4rJ7q2+T3IYHKpknq+UwAKAQUmJZ8xrWGOchwdIKvxA3d+IB4zXumd56ipg5YIVPvDrm7foKVXfZSH9vnazuqba6Lky/PFCt0vbehmVDtTzkJS1JDHHFA56GxnLIbuQBTqrZkjkTcMmqwiUeVyzN4tADevebVfpnLFuWzWZ9I+5IAT5HGaPiPtX3MksQwNGr57eOtbtkVIVsAKuWy1AiE9kPO+4raOxZJrgjZ4kCZuAnQDz4ANa3UxX6AIJjXUar2pjcKiHAE1mHcacIbV3cpl0bQrJaoWp6fTsHZBBJdC9ccV+qj3RPzyoAms9GANiqPKhbF/fwPMTv4IoabgC8ObWNqhArzyCsi0dIbvBWAJokAlpNBFgmss5cOW4lMrmoUlpV8hMA1rEfUdpaY99PXKHzUx9CD6tXRTDtBiy0m7yzOjqe4FMLrnbdyyu/PPfmXGjDwwQQCY2Is+TIxVSe93EBpLqeT93KQJP04zm2GSn7WjknFB24BJ940M1bHfzb+SxiMFV1V34bzsSrVPvEQQCPQsRTziij9hysa3AQgKdDNRNva3zVDqgOtNwPhZAFJwEgOG8DMRjfpdf+jqHe9oAuZ0Rf5WQu3/aHhTTjAvBpRirBXKIvB86nnFkw+7tEwAMdMHIrVSiCR/ZA0OoLoy7VLZ88uCdzlkkzgIjBOws1T/QBNHfFA0lYmQFCh7u7ecB2a0ZNRKnpG3pg7J7hwD7u6e/8ialYRcJh6e8beukD4CGdf6kxiCqSD9XRolft/Of0RVyRej8zXQHoKsB4gF9O3Hyp2xUtqZk9hjeShVNHV5hOR2n9D4EIuEAVssXMAYioM79XCMAuo2lKvU/34dv7AHRE+t5wVgwfW81cqAp1GhCLPHwUHc6xiVLbaUxkI5bQXZOX1eFQsSzqCOig+AcVmOpHOFO9iQAAAABJRU5ErkJggg=="/></td>
+                        <td><a class="anchor-btn" href="https://github.com/FeathersMcgr4w/find-linkedin-employees">Github</a></td>
+                    </tr>
+                    <tr>
+                        <td>OSINT Email Employees</td>
+                        <td>Python script to search for emails from a domain</td>
+                        <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABHFJREFUaEPNWotx2zAMBbxI7UnqTNJkkqSTJJ0k7iRxFglqkKAEigQBype76i5XW6JAPPweQBdhuRAAaP2qPtlPusvNm74cf8VWOK6v/A8A5gzCqxWA+Zf9NxyLzhpc1qd/1OdY2OjNZjdOO8y+FFvPq+SqNUQgIyM8u8c3zhmnzapl13L6UjG9vftaXRnZLLJNDPwWZkSyu4aIHgHgJwCc1eKjfL4CAP/xdQGAP4hYvruy6wBsjRUSYC0iIlb4FQBEWQ6MkGMZyNMskG3Eh3ZylH9Xz9mqxeoRw/D6hz4IKzdqsfcCeL6Je+HwQMQTiyaidwI4V4Itp+T7L4j420PbZIck4CSAWgwrKzH/hohPGcDX800rBjW4KkQXRHzwAFjPM4D55E+vKQD8lZXg8GGvuPmwQqAL4uFOABPwNdYNgEVKOI2lKvkesFl0HEKOZywA2T3s2RCUO0KoEJluLhpv2CiIqFNxGqU/HAcHAOz1gOwstf6XfJ0pk/yKJrYiUXNF4gMA0EAT2THplRJrmdGtQkRUSuVEpkwt7QEoMbjwxC4A36J8E2F0AUgluAk1WbryRCfUKw9sKswRCD5iXUHH4rJ7q2+T3IYHKpknq+UwAKAQUmJZ8xrWGOchwdIKvxA3d+IB4zXumd56ipg5YIVPvDrm7foKVXfZSH9vnazuqba6Lky/PFCt0vbehmVDtTzkJS1JDHHFA56GxnLIbuQBTqrZkjkTcMmqwiUeVyzN4tADevebVfpnLFuWzWZ9I+5IAT5HGaPiPtX3MksQwNGr57eOtbtkVIVsAKuWy1AiE9kPO+4raOxZJrgjZ4kCZuAnQDz4ANa3UxX6AIJjXUar2pjcKiHAE1mHcacIbV3cpl0bQrJaoWp6fTsHZBBJdC9ccV+qj3RPzyoAms9GANiqPKhbF/fwPMTv4IoabgC8ObWNqhArzyCsi0dIbvBWAJokAlpNBFgmss5cOW4lMrmoUlpV8hMA1rEfUdpaY99PXKHzUx9CD6tXRTDtBiy0m7yzOjqe4FMLrnbdyyu/PPfmXGjDwwQQCY2Is+TIxVSe93EBpLqeT93KQJP04zm2GSn7WjknFB24BJ940M1bHfzb+SxiMFV1V34bzsSrVPvEQQCPQsRTziij9hysa3AQgKdDNRNva3zVDqgOtNwPhZAFJwEgOG8DMRjfpdf+jqHe9oAuZ0Rf5WQu3/aHhTTjAvBpRirBXKIvB86nnFkw+7tEwAMdMHIrVSiCR/ZA0OoLoy7VLZ88uCdzlkkzgIjBOws1T/QBNHfFA0lYmQFCh7u7ecB2a0ZNRKnpG3pg7J7hwD7u6e/8ialYRcJh6e8beukD4CGdf6kxiCqSD9XRolft/Of0RVyRej8zXQHoKsB4gF9O3Hyp2xUtqZk9hjeShVNHV5hOR2n9D4EIuEAVssXMAYioM79XCMAuo2lKvU/34dv7AHRE+t5wVgwfW81cqAp1GhCLPHwUHc6xiVLbaUxkI5bQXZOX1eFQsSzqCOig+AcVmOpHOFO9iQAAAABJRU5ErkJggg=="/></td>
+                        <td><a class="anchor-btn" href="https://github.com/FeathersMcgr4w/emails-from-domain">Github</a></td>
+                    </tr>
+                    <tr>
+                        <td>Linux OSINT Tool</td>
+                        <td>Linux tool that automates the recognition phase in web pentesting</td>
+                        <td><img src="data:image/png;base64,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"/></td>
+                        <td><a class="anchor-btn" href="">Github</a></td>
+                    </tr>
+                    <tr>
+                        <td>Pi-Hole + Unbound DNS</td>
+                        <td>DNS server setup to trace domains to root DNS servers on a local network and increase anonymity.</td>
+                        <td><i class="fa-brands fa-raspberry-pi" style='font-size:48px;color:white'></i></td>
+                        <td><a class="anchor-btn" href="">Github</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+
+        <!--SKILLS-->
+        <div class="ctn-blocks">
+            <div class="flex-header">
+                <div class="display-flex-ctn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6821/6821173.png" alt="skills-icon" width="50px"/>
+                    <h2>SKILLS</h2>
+                </div>
+                <button class="dropdown-btn" onclick="toggleDropdown('dropdown-content-3')">▼</button>
+            </div>
+            <hr class="line-decoration"/>
+            
+            <!-- TABLA (Oculta por defecto) -->
+            <div class="content">
+                <div id="dropdown-content-3" class="dropdown-content">
+                    <table class="main-table">
+                        <tr class="tr-proyects">
+                            <td>Operative Systems:</td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/kali-linux-icon.svg" alt="kali-linux-icon" width="60px"/><small style="padding:5px;">Kali Linux</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/pihole-icon.svg" alt="pihole-icon" width="60px"/><small style="padding:5px;">Raspberry Pi OS</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/windows-icon.svg" alt="windows-icon" width="60px"/><small style="padding:5px;">Windows</small></div></td>
+                        </tr>
+                        <tr class="tr-proyects">
+                            <td>Pentesting Web:</td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/bash-icon.svg" alt="bash-icon" width="60px"/><small style="padding:5px;">Bash</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/python-icon.svg" alt="python-icon" width="60px"/><small style="padding:5px;">Python</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/burpsuite-icon.svg" alt="burpsuite-icon" width="60px"/><small style="padding:5px;">BurpSuite</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/postman-icon.svg" alt="postman-icon" width="60px"/><small style="padding:5px;">Postman</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/osint-icon.svg" alt="osint-icon" width="60px"/><small style="padding:5px;">Osint</small></div></td>
+                        </tr>
+                        <tr class="tr-proyects">
+                            <td>Web Development:</td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/html-icon.svg" alt="html-icon" width="60px"/><small style="padding:5px;">Html</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/css-icon.svg" alt="css-icon" width="60px"/><small style="padding:5px;">Css</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/js-icon.svg" alt="javascript-icon" width="60px"/><small style="padding:5px;">JS</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/git-icon.svg" alt="git-icon" width="60px"/><small style="padding:5px;">Git</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/github-icon.svg" alt="github-icon" width="60px"/><small style="padding:5px;">Github</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/react-icon.svg" alt="react-icon" width="60px"/><small style="padding:5px;">React</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/nodejs-icon.svg" alt="nodejs-icon" width="60px"/><small style="padding:5px;">NodeJS</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/express-icon.svg" alt="express-icon" width="60px"/><small style="padding:5px;">Exprees</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/mysql-icon.svg" alt="mysql-icon" width="60px"/><small style="padding:5px;">MySql</small></div></td>
+                            <td><div class="display-center"><img src="../images/technologies-icons/mongodb-icon.svg" alt="mongodb-icon" width="60px"/><small style="padding:5px;">MongoDB</small></div></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!--CTF MACHINES-->
+        <div class="ctn-blocks">
+            <div class="flex-header">
+                <div class="display-flex-ctn">
+                    <img src="https://avatars.githubusercontent.com/u/31746234?s=280&v=4" alt="ctf-machines-icon" width="50px"/>
+                    <h2>CTF MACHINES</h2>
+                </div>
+                <button class="dropdown-btn" onclick="toggleDropdown('dropdown-content-4')">▼</button>
+            </div>
+            <hr class="line-decoration"/>
+            
+            <!-- TABLA (Oculta por defecto) -->
+            <div id="dropdown-content-4" class="dropdown-content">
+                <div class="flex-header">
+                    <img class="ctf-flag" src="https://www.hackthebox.com/images/landingv3/mega-menu-ctf.webp" alt="hackthebox-flag" width="200px"/>
+                    <p style="width: 450px;">This section is about the machines I have solved and the writeups I realized for each one.</p>
+                    <a class="anchor-btn" href="/pages/cft_machines.html" target="_blank">View</a>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!--CERTIFICATIONS-->
+        <div class="ctn-blocks">
+            <div class="flex-header">
+                <div class="display-flex-ctn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7238/7238706.png" alt="certifications-icon" width="50px"/>
+                    <h2>CERTIFICATIONS</h2>
+                </div>
+                <button class="dropdown-btn" onclick="toggleDropdown('dropdown-content-5')">▼</button>
+            </div>
+            <hr class="line-decoration"/>
+            
+            <!-- TABLA (Oculta por defecto) -->
+            <div id="dropdown-content-5" class="dropdown-content">
+                <table class="main-table">
+                    <tr class="tr-certif-resp">
+                        <td><img src="https://images.credly.com/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png" width="75px"/></td>
+                        <td>Introduction to Cybersecurity</td>
+                        <td>Cyber threats, attacks and vulnerabilities. Analyze and mitigate threats.</td>
+                        <td><a class="anchor-btn" href="https://www.credly.com/badges/68493d28-30ad-4a61-8ada-88c84a1fbd74/public_url">Verify</a></td>
+                    </tr>
+                    <tr class="tr-certif-resp">
+                        <td><img src="https://images.credly.com/images/5bdd6a39-3e03-4444-9510-ecff80c9ce79/image.png" width="75px"/></td>
+                        <td>Networking Basics</td>
+                        <td>Types of networks, network communication, Routing, wireless connectivity. IPv4 - IPv6</td>
+                        <td><a class="anchor-btn" href="https://www.credly.com/badges/027aa53f-aeb0-4c46-9406-9f3ddf48c97b/public_url">Verify</a></td>
+                    </tr>
+                    <tr class="tr-certif-resp">
+                        <td><img src="https://images.credly.com/size/680x680/images/0ca5f542-fb5e-4a22-9b7a-c1a1ce4c3db7/EndpointSecurity.png" width="75px"/></td>
+                        <td>Endpoint Security</td>
+                        <td>Network security, analyze network traffic, network threats, operating systems, Firewalls, IPS, IDS, ACLs, EDR</td>
+                        <td><a class="anchor-btn" href="https://www.credly.com/badges/94bada3d-783f-4997-873f-389aeec13c14/public_url">Verify</a></td>
+                    </tr>
+                    <tr class="tr-certif-resp">
+                        <td><img src="https://images.credly.com/images/51526f76-711b-4caf-b04d-27f89512b112/twitter_thumb_201604_NetworkDefense_v1_091721.png" width="75px"/></td>
+                        <td>Network Defense</td>
+                        <td>Security architecture, Firewalls-ACLs Routers-ACLs, Cloud Security, cryptography, alert analysis</td>
+                        <td><a class="anchor-btn" href="comming-soon">-Soon-</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
+

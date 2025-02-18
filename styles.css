@@ -201,7 +201,7 @@ body {
     .tr-proyects {
         max-width: 480px;
         display: grid;
-        grid-template-columns: repeat(4, 105px);
+        grid-template-columns: repeat(3, 105px);
     }
 
     .ctf-flag {

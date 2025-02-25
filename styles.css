@@ -6,12 +6,17 @@ body {
     padding: 0;
 }
 
+.component {
+    display: none;
+}
+
 .container {
     margin: 20px auto;
     max-width: 900px;
     padding: 40px;
     border-radius: 8px;
     border: 1px solid #43ff0f;
+    box-shadow: 0 0 10px #76ffd1;
 }
 
 .flex-header {
@@ -45,6 +50,7 @@ body {
 /*GREEN-LINE-DECORATION*/
 .line-decoration {
     border: 1px solid #43ff0f;
+    box-shadow: 0 0 10px #76ffd1;
     margin-bottom: 25px;
 }
 
@@ -114,6 +120,7 @@ body {
 .dropdown-btn {
     background-color: #181a1b;
     border: 2px solid #3bde0e;
+    box-shadow: 0 0 10px #76ffd1;
     color: #ffffff;
     padding: 5px 10px;
     font-size: 16px;
@@ -121,7 +128,7 @@ body {
     border-radius: 5px;
 }
 .dropdown-btn:hover {
-    background-color: #3bde0e;
+    background-color: #42f710;
     color: #181a1b;
   }
 
@@ -164,6 +171,11 @@ body {
     animation: caret-blink 0.7s step-end infinite;
 }
 
+.footer {
+    text-align: center;
+    color: #76ffd1;
+}
+
 @keyframes caret-blink {
     50% {
         border-color: transparent;
@@ -172,6 +184,24 @@ body {
 
 
 /*Mobile*/
+.ctn-mobile {
+    background-color: #222426;
+    padding: 2px 10px;
+    margin: 30px 0px;
+}
+
+@media (min-width: 769px) {
+    #desktopComponent {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    #mobileComponent {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .container {
         margin: 10px;
@@ -213,37 +243,5 @@ body {
         max-width: 480px;
         display: grid;
         grid-template-columns: repeat(3, 125px);
-    }
-
-    /*CTFs table*/
-    .main-table-mobile {
-        width: 100%;
-        border-collapse: collapse;
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-    
-    .main-table-mobile tr {
-        display: flex;
-        flex-direction: column;
-        border: 1px solid #ddd;
-        margin-bottom: 10px;
-        padding: 10px;
-    }
-    
-    .main-table-mobile td {
-        display: flex;
-        justify-content: space-between;
-        padding: 8px;
-        border-bottom: 1px solid #ddd;
-    }
-    
-    .main-table-mobile td:last-child {
-        border-bottom: none;
-    }
-
-    .console-ui {
-        padding: 15px 10px;
     }
 }

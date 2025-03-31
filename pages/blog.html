@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Machines</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!--HEADER-->
+        <div class="flex-header">
+            <div>
+                <h1>Blog</h1>
+            </div>
+            <img class="profile-photo" src="https://cdn-icons-png.flaticon.com/512/4807/4807934.png" alt="blog-icon" width="50px"/>
+        </div>
+        <hr>
+
+
+        <!--CTF MACHINES-->
+        <div class="ctn-blocks">
+            <div class="flex-header">
+                <div class="display-flex-ctn">
+                    <h2>⬇️ Articles</h2>
+                </div>
+                <button class="dropdown-btn" onclick="toggleDropdown('dropdown-content-8')">▼</button>
+            </div>
+            <hr class="line-decoration"/>
+            
+            <!-- TABLA (Oculta por defecto) -->
+            <div id="dropdown-content-8" class="dropdown-content">
+                <div id="desktopComponent" class="component">
+                    <table class="main-table-mobile">
+                        <tr><td>Post</td><td>Topic</td><td>Tag</td><td>Article</td></tr>
+                        <tr><td><img src="https://cdn-icons-png.flaticon.com/512/1059/1059649.png" width="45px"/></td><td>Spoofing SFP-DKIM-DMARK</td><td># Email Spoofing</td><td><a class="anchor-btn" href="../writeUps/Spoofing_SFP-DKIM-DMARK.pdf" target="_blank">View</a></td></tr>
+                        <tr><td><img src="https://images.squarespace-cdn.com/content/v1/5f36d14c1f72076cfa6b46fb/48110c9d-192f-4a0b-b892-d39006c896c1/Digital+Risk+Protection+%28DRP%29" width="50px"/></td><td>OSINT Ofensivo Pentesting Web</td><td># Osint</td><td><a class="anchor-btn" href="../writeUps/OSINT_ofensivo_pentesting_web.pdf" target="_blank">View</a></td></tr>
+                        <tr><td><img src="https://cdn.iconscout.com/icon/free/png-256/free-tor-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-7-pack-logos-icons-3030253.png?f=webp&w=256" width="50px"/></td><td>Tor Onion Routing</td><td># Network</td><td><a class="anchor-btn" href="../writeUps/Tor_Onion_Routing.pdf" target="_blank">View</a></td></tr>
+                    </table>
+                </div>
+                <!--MOBILE-->
+                <div id="mobileComponent" class="component">
+                    <div class="ctn-mobile">
+                        <div class="flex-header"><h3>Spoofing SFP-DKIM-DMARK</h3><img src="https://cdn-icons-png.flaticon.com/512/1059/1059649.png" width="30px"/></div>
+                        <hr>
+                        <p>Tag: # Email Spoofing</p>
+                        <hr>
+                        <br>
+                        <div class="flex-header">
+                            <div>Article:</div>
+                            <div><a class="anchor-btn" href="../writeUps/Spoofing_SFP-DKIM-DMARK.pdf" target="_blank">View</a></div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="ctn-mobile">
+                        <div class="flex-header"><h3>OSINT Ofensivo</h3><img src="https://images.squarespace-cdn.com/content/v1/5f36d14c1f72076cfa6b46fb/48110c9d-192f-4a0b-b892-d39006c896c1/Digital+Risk+Protection+%28DRP%29" width="40px"/></div>
+                        <hr>
+                        <p>Tag: # Osint</p>
+                        <hr>
+                        <br>
+                        <div class="flex-header">
+                            <div>Article:</div>
+                            <div><a class="anchor-btn" href="../writeUps/OSINT_ofensivo_pentesting_web.pdf" target="_blank">View</a></div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="ctn-mobile">
+                        <div class="flex-header"><h3>Tor Onion Routing</h3><img src="https://cdn.iconscout.com/icon/free/png-256/free-tor-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-7-pack-logos-icons-3030253.png?f=webp&w=256" width="40px"/></div>
+                        <hr>
+                        <p>Tag: # Network</p>
+                        <hr>
+                        <br>
+                        <div class="flex-header">
+                            <div>Article:</div>
+                            <div><a class="anchor-btn" href="../writeUps/Tor_Onion_Routing.pdf" target="_blank">View</a></div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div class="footer">
+        <p>Designed by David Padron</p>
+        <div>
+            <a href="https://www.linkedin.com/in/david-padron-9a74aa323/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAmhJREFUSEuNVdmV2zAMHLASpYG1twOlE7kHH9mv7GdsF2F3IlcQH1tA1MgKEUhQBHX4mV8URXAwGByEZ4sAsF6we3s0OicQWM1k36/8h305GVhv9L4CJJzxuYGIz+Zu+a8JT/1t/Wm9Ts4BZO3W/KgdcwmSuCRyo7f9b71j98HV5kCLH9HrDGDLd404IxCVpfscU8Wh4KwJtFgcaBGCz5Qz2PGd46MMd3FoGwZVE/o+zQ0P4NcAIDIg4LynxUqubPirJrTllKcjFGVzpAVFzQKS0tnyzRNg0OVIbz9lv+P7qYtrFbN1znX/xAggS1PAaNAAuADUdHCfSQ99XoUdnevvLETWIw8QvJDYCwgIbQFQIazCNxdyh4ka0aiFKwhcWp0SwED/KLLVYMe3U8ek2nvhCB/8t5RQ/HHvHlBW59jvDuAzhnEWIInM5z0tvciiAQOVNYqaxUL71V6LFu5fBJwBIOz4xuIdkQW4nSRVrdGGH7WEhUGrI72dhdma77UDl30dKFpWIlEDATjQciWUJUQW4IOv5TdcHezDPdmlLgCM01RzNaZproGGyC1IKnPD94rAkroBwC1XIvpWtZpmMKiDLlNmNVjzo3IeQFoIzvsRAONAy0Ela46lEGklE7BrNUSegQ+FAlgGot/Vh/IJA58xvchzGmz40YfIM51jYOaEtgoFCMFtuizxec5AKYUmj8l3LKxQdJBKl4qXT6mPQrazaRpF7qt7oiWknpO3dFuzWbu2rSKmpHrXj2N7J+2nh1LfKPtJ11vMd/1X5sHcncEsSv7ZIT49e6d59YJqbZl58JqBHeivWPwHgel/MUJMHfYAAAAASUVORK5CYII="/></a>
+            <a href="https://github.com/FeathersMcgr4w"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAArJJREFUSEuNVltiokAQrB72IOQC0eQC0ZNEDuEjX+JXjOYOuifRvUDUXEAOstBLDz0wDESXDwXm0V1d1TUQ7l4EAoMJALcn21fNjw7qRH1PPevuhqwmaGC996P7MeW+93KBF3waFTAvDBoReAQgY1BW3h8Nij9rejpW4frReAHaWBZ8inOOdkTFyC6X8vSnkxnk4zU9Z1WUbhk1fDMw48uyfEqrN6zFcIVp9vD2ywDsNzRYhdt3cpry94TAO7u4k7UG89/rvQZLNzRc2RRaJOvDG3/FOcxV8z5GyJMC5rUcTjWYZCpXrP+p8JDj15JQjMDIDBWJ48VxU8trypcDMY8kOoH3HzRMZFD4WNOT27x+dsTOivOyXKElRbahwYMrVV0iKY0B7xxHfoB7up3zeVcqa+KEUKIa++qy613tHbERePyuEuwE8NVCwKL4ihnR1XEmJf0wg5Wjwq6XLACaKIJsS4OHQHE3G2bK3wftExSg4yc9jlsczPgi5FryyqY6bmWCU4JYhb99gEAG6zJVdVIepNv1mvH5ClBcjXO2paEi+D8zmfNFShRXAgE+aGD39kmuIYod+Eq4SbKinPG5ghko0EOg3VshkHm1TBsMbTTuqdzck2mwNjC1Q8tzGOlG1OCwBqxLfxRsXsuEUuutmpwBd2Uq2GyjgWODPGFEL+WCFFS5Z8R5sjZNs/mq8UvYFkjgj5rRVUiWLBi0FJsG+LjRrnZo5kVL1q59YKhpssAqqjmz4rIUyNL6lTv2qyh0XGsuoGRLj/tQ0e09SIKcl2VNU9bDBcDv1kI7x7d02zudzRsEmmRzKgFvfIr/Itppd3bQeAjkwEnW9GxPthBx/xnlHYHiM6KQd89NncPKvyU++CLwE70dQDOyXxU/ZNf3vpnqWUVNjB/+pxbu8aJmql9v4B9nT3QuqZ9BqwAAAABJRU5ErkJggg=="/></a>
+        </div>
+    </div>
+    <script type="text/javascript" src="../scripts.js"></script>
+</body>
+</html>
